@@ -1,16 +1,9 @@
+---
 kind: pipeline
+type: docker
 name: default
-
 steps:
-- name: build api
-  image: plugins/docker
-  settings:
-    username:
-      from_secret: docker_username
-    password:
-      from_secret: docker_password
-    repo: docker.coroutine.dev/todogo_cljs
-    context: .
-    dockerfile: ./Dockerfile
-    registry: docker.coroutine.dev
-    auto_tag: true
+- name: greeting
+  image: golang:1.12
+  commands:
+  - nproc
